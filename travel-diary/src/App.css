@@ -1,0 +1,23 @@
+.App {
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+    color: #7858ec
+        /* transition: all 0.3s;
+    animation: blinker 5s linear infinite; */
+}
+
+@keyframes blinker {
+
+    0%,
+    100% {
+        color: #e75ab8
+    }
+
+    50% {
+        color: #7858ec;
+    }
+
+}

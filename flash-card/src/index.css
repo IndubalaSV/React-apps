@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.App {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 100px;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: #faedcd;
+  color: #d4a373;
+  box-shadow: 5px 5px 5px #00000039;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.active {
+  background-color: #9f84f7;
+  color: #f9f9f9;
+}

@@ -1,0 +1,48 @@
+.card{
+    display:flex;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+    height:200px;
+    width:80%;
+    margin:20px auto;
+}
+
+.card-image img{
+    width:250px;
+    height:100%;
+    object-fit:cover;
+    margin-right:20px;
+    border-radius:5px;
+}
+.card-content{
+    display:flex;
+    flex-direction:column;
+}
+.card-content .location h4{
+    text-transform: uppercase;
+}
+a{
+    color:black;
+}
+.card-content .dates{
+    font-weight:bold;
+}
+.location{
+    display:flex;
+    align-items:center;
+}
+.location h4{
+    margin-right:15px;
+    display:flex;
+    align-items:center;
+}
+h2{
+    margin:0;
+}
+p{
+    margin:0;
+    margin-top:15px;
+}
