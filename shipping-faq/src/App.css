@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 50px auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 25px;
+  margin: 0;
+}
+
+.accordion {
+  width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.accordion-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-item-header h2 {
+  margin: 10px 0;
+}
+
+button {
+  border: none;
+}
+
+img {
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 30px;
+}
