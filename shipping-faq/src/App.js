@@ -1,26 +1,36 @@
 import "./App.css";
 import React from "react";
 import image from "./background.jpeg";
-function AccordionItem({ item }) {
-  let { id, question, answer } = item;
-  let [isOpen, setIsOpen] = React.useState(false);
+function AccordionItem({ item, isOpen, currentItem, setCurrentItem }) {
+  const { id, question, answer } = item;
+  const handleClick = () => {
+    setCurrentItem(currentItem === id ? null : id);
+  };
   return (
     <div className="accordion-item">
-      <div className="accordion-item-header">
+      <div className="accordion-item-header" onClick={handleClick}>
         <h2>
           {id}. {question}
         </h2>
-        <button onClick={() => setIsOpen(!isOpen)}>{isOpen ? "-" : "+"}</button>
+        <button onClick={handleClick}>{currentItem === id ? "-" : "+"}</button>
       </div>
-      {isOpen && <div className="accordion-item-body">{answer}</div>}
+      {currentItem === id && (
+        <div className="accordion-item-body">{answer}</div>
+      )}
     </div>
   );
 }
 function Accordion({ data }) {
+  let [currentItem, setCurrentItem] = React.useState([]);
   return (
     <div className="accordion">
       {data.map((item, index) => (
-        <AccordionItem key={index} item={item} />
+        <AccordionItem
+          key={index}
+          item={item}
+          currentItem={currentItem}
+          setCurrentItem={setCurrentItem}
+        />
       ))}
     </div>
   );
