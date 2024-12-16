@@ -1,0 +1,8 @@
+body {
+  font-family: consolas;
+  box-sizing: border-box;
+  background: url('/public/bill.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}

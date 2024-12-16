@@ -1,0 +1,17 @@
+.App h2 {
+  text-align: center;
+}
+.App {
+  width: 500px;
+  margin: 0 auto;
+}
+.App div {
+  margin: 10px 0;
+}
+
+.App label {
+  margin-right: 10px;
+}
+select {
+  padding: 1px;
+}
